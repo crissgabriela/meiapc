@@ -1,0 +1,96 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1.5cm, top=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+
+% Configuración de colores y bordes
+\definecolor{utalca_gold}{HTML}{B58E31}
+
+\begin{document}
+
+% --- ENCABEZADO ---
+\begin{minipage}{0.2\textwidth}
+    \includegraphics[width=2.5cm]{logo_utalca.png} % Asegúrate de tener el logo
+\end{minipage}
+\begin{minipage}{0.75\textwidth}
+    \textbf{\large INGENIERÍA CIVIL MECATRÓNICA} \\
+    \textbf{\large PLAN DE CLASES 2026} \\
+    \textbf{Primer Semestre}
+\end{minipage}
+
+\vspace{0.5cm}
+
+% --- INFORMACIÓN GENERAL ---
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{4.5cm}|p{12.5cm}|}
+    \hline
+    \textbf{Nombre del Módulo} & Manufactura e Ingeniería Asistida por Computador \\ \hline
+    \textbf{Profesor Responsable Cátedra} & Criss Carreño Bernales / crisscarreno@utalca.cl \\ \hline
+    \textbf{Profesor Responsable Laboratorio} & Criss Carreño Bernales / crisscarreno@utalca.cl \\ \hline
+\end{tabular}
+
+\vspace{0.3cm}
+
+\begin{tabular}{|p{4.5cm}|p{12.5cm}|}
+    \hline
+    \textbf{Horario presencial} & Cátedra: Miércoles Bloques 7-8 \\ 
+                                & Laboratorio: Jueves Bloques 6-7 \\ \hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+% --- TABLA DE PLANIFICACIÓN ---
+\begin{longtable}{|p{2.5cm}|p{5.5cm}|c|p{4.5cm}|c|}
+    \hline
+    \rowcolor{gray!20}
+    \textbf{Sesión Presencial} & \textbf{Actividad presencial a realizar} & \textbf{T. Pres.} & \textbf{Actividad no presencial} & \textbf{T. No P.} \\ \hline
+    \endfirsthead
+    \hline
+    \rowcolor{gray!20}
+    \textbf{Sesión Presencial} & \textbf{Actividad presencial a realizar} & \textbf{T. Pres.} & \textbf{Actividad no presencial} & \textbf{T. No P.} \\ \hline
+    \endhead
+
+    \textbf{Semana 1} \newline 16 marzo & Clase 0: Presentación Syllabus y Software. Lab 1: Introducción a OpenSCAD y lógica CSG. & 4 hrs & Configuración Fusion 360 y licencias. & 2 hrs \\ \hline
+    
+    \textbf{Semana 2} \newline 23 marzo & Clase 1: DFM y modelado paramétrico. Lab 2: Integración OpenSCAD -> Fusion 360. & 4 hrs & Guía #1: Diseño de soporte paramétrico. & 2 hrs \\ \hline
+    
+    \textbf{Semana 3} \newline 30 marzo & Clase 2: Programación CNC Torno (G00, G01, G71). \newline \textbf{Lab 3: SUSPENDIDO} (Suspensión 13:00 hrs). & 2 hrs & \textbf{Asíncrono:} Video-tutorial OpenSCAD avanzado. & 2 hrs \\ \hline
+    
+    \textbf{Semana 4} \newline 06 abril & Clase 3: CNC Fresadora y Ciclos de Cajeteo. \newline \textbf{Lab 4: SUSPENDIDO} (Recepción Mechones). & 2 hrs & \textbf{Asíncrono:} Simulación de código G online. & 2 hrs \\ \hline
+    
+    \textbf{Semana 5} \newline 13 abril & Clase 4: Estrategias CAM y post-procesado. Lab 5: Taller intensivo Fusion CAM y Mastercam. & 4 hrs & Preparación Informe #1 (Lab). & 2 hrs \\ \hline
+    
+    \textbf{Semana 6} \newline 20 abril & \textbf{Prueba N°1 (30\% Teoría)}. Lab 6: Generación de código para pieza integrada. & 4 hrs & Avance Trabajo Práctico N°1. & 2 hrs \\ \hline
+    
+    \textbf{Semana 7} \newline 27 abril & Clase 5: Teoría FEA y Elementos Finitos. Lab 7: Intro Ansys y carga de geometría. & 4 hrs & Estudio autónomo. & 2 hrs \\ \hline
+    
+    \textbf{Semana 8} \newline 04 mayo & Clase 6: Cargas estáticas y convergencia. Lab 8: Análisis de tensiones en piezas Fusion. & 4 hrs & Guía #2: FEA estático. & 2 hrs \\ \hline
+    
+    \textbf{Semana 9} \newline 11 mayo & Clase 7: Análisis Térmico y Transferencia de Calor. Lab 9: Simulación térmica en Ansys. & 4 hrs & Avance Proyecto Integrador. & 2 hrs \\ \hline
+    
+    \textbf{Semana 10} \newline 18 mayo & \textbf{SEM. AUTOCUIDADO (SUSPENDIDO)} & 0 hrs & Trabajo autónomo / Lectura de casos. & 2 hrs \\ \hline
+    
+    \textbf{Semana 11} \newline 25 mayo & Clase 8: Optimización Topológica. \newline \textbf{Lab 10: FERIADO (21 May)}. & 2 hrs & Optimización de modelo OpenSCAD. & 2 hrs \\ \hline
+    
+    \textbf{Semana 12} \newline 01 junio & \textbf{Prueba N°2 (30\% Teoría)}. Lab 11: Validación de resultados CAE. & 4 hrs & Informe Final de Laboratorio. & 2 hrs \\ \hline
+    
+    \textbf{Semana 13} \newline 08 junio & Clase 9: Integración de manufactura y análisis. Lab 12: Proyecto Final - Diseño. & 4 hrs & Desarrollo Proyecto Final. & 2 hrs \\ \hline
+    
+    \textbf{Semana 14} \newline 15 junio & Clase 10: Revisión de proyectos. Lab 13: Simulación FEA de proyecto. & 4 hrs & Refinamiento de simulaciones. & 2 hrs \\ \hline
+    
+    \textbf{Semana 15} \newline 22 junio & Clase 11: Presentación de avances. Lab 14: Generación CAM de proyecto final. & 4 hrs & Preparación presentación final. & 2 hrs \\ \hline
+    
+    \textbf{Semana 16} \newline 29 junio & Clase 12: Fabricación en Lab (Impresión 3D). Lab 15: Pruebas de ensamble. & 4 hrs & Informe de Proyecto Final. & 2 hrs \\ \hline
+    
+    \textbf{Semana 17} \newline 06 julio & \textbf{Entrega y Presentación Proyecto Final}. & 4 hrs & Cierre de portafolio. & 2 hrs \\ \hline
+    
+    \textbf{Semana 18} \newline 13 julio & \textbf{Prueba Opcional (POA)} y Cierre de Notas. & 2 hrs & Revisión de casos particulares. & - \\ \hline
+
+\end{longtable}
+
+\end{document}
