@@ -9,9 +9,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: nombre_de_tu_archivo.tex # El código que te pasé antes
+          # Aquí ponemos el nombre EXACTO de tu archivo .tex
+          root_file: Plan_Clases_MeIAPC_2026.tex
       - name: Upload PDF
         uses: actions/upload-artifact@v3
         with:
           name: Plan_Clases_2026
-          path: nombre_de_tu_archivo.pdf
+          # Aquí el nombre del PDF que se generará (mismo nombre que el .tex pero .pdf)
+          path: Plan_Clases_MeIAPC_2026.pdf
