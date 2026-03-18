@@ -4,12 +4,12 @@
 \usepackage[margin=1.5cm, top=2cm]{geometry}
 \usepackage{graphicx}
 \usepackage{array}
-\usepackage[table]{xcolor} % <--- Esta es la línea corregida
+\usepackage[table]{xcolor} % Corregido: opción 'table' para permitir \rowcolor
 \usepackage{longtable}
 \usepackage{fancyhdr}
 
-% Configuración de colores y bordes
-\definecolor{utalca_gold}{HTML}{B58E31}
+% Definición de colores institucionales
+\definecolor{utalca_gray}{HTML}{E6E7E8}
 
 \begin{document}
 
@@ -18,35 +18,72 @@
     \includegraphics[width=2.5cm]{logo_utalca.png} 
 \end{minipage}
 \begin{minipage}{0.75\textwidth}
-    \textbf{\large INGENIERÍA CIVIL MECATRÓNICA} \\
+    \textbf{\large FACULTAD DE INGENIERÍA - INGENIERÍA CIVIL MECATRÓNICA} \\
     \textbf{\large PLAN DE CLASES 2026} \\
     \textbf{Primer Semestre}
 \end{minipage}
 
 \vspace{0.5cm}
 
-% --- INFORMACIÓN GENERAL ---
+% --- INFORMACIÓN DEL MÓDULO ---
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|p{4.5cm}|p{12.5cm}|}
     \hline
     \textbf{Nombre del Módulo} & Manufactura e Ingeniería Asistida por Computador \\ \hline
-    \textbf{Profesor Responsable Cátedra} & Criss Carreño Bernales / crisscarreno@utalca.cl \\ \hline
-    \textbf{Profesor Responsable Laboratorio} & Criss Carreño Bernales / crisscarreno@utalca.cl \\ \hline
-\end{tabular}
-
-\vspace{0.3cm}
-
-\begin{tabular}{|p{4.5cm}|p{12.5cm}|}
-    \hline
-    \textbf{Horario presencial} & Cátedra: Miércoles Bloques 7-8 \\ 
-                                & Laboratorio: Jueves Bloques 6-7 \\ \hline
+    \textbf{Docente Responsable} & Criss Carreño Bernales / cricarreno@utalca.cl \\ \hline
+    \textbf{Horario Cátedra} & Miércoles Bloques 7 y 8 \\ \hline
+    \textbf{Horario Laboratorio} & Jueves Bloques 6 y 7 \\ \hline
 \end{tabular}
 
 \vspace{0.5cm}
 
-% --- TABLA DE PLANIFICACIÓN ---
+% --- CRONOGRAMA DETALLADO ---
 \begin{longtable}{|p{2.5cm}|p{5.5cm}|c|p{4.5cm}|c|}
     \hline
-    \rowcolor{gray!20}
-    \textbf{Sesión Presencial} & \textbf{Actividad presencial a realizar} & \textbf{T. Pres.} & \textbf{Actividad no presencial} & \textbf{T. No P.} \\ \hline
-% El resto del contenido de la tabla sigue igual...
+    \rowcolor{gray!30}
+    \textbf{Semana / Fecha} & \textbf{Actividad Presencial (Cátedra / Lab)} & \textbf{Hrs} & \textbf{Actividad No Presencial} & \textbf{Hrs} \\ \hline
+    \endfirsthead
+    \hline
+    \rowcolor{gray!30}
+    \textbf{Semana / Fecha} & \textbf{Actividad Presencial (Cátedra / Lab)} & \textbf{Hrs} & \textbf{Actividad No Presencial} & \textbf{Hrs} \\ \hline
+    \endhead
+
+    \textbf{Semana 1} \newline 16 de marzo & Presentación Syllabus. Introducción a CAD/CAM y lógica de OpenSCAD. & 4 & Configuración de Fusion 360 y licencias. & 2 \\ \hline
+    
+    \textbf{Semana 2} \newline 23 de marzo & Diseño para Manufactura (DFM). Lab: Integración de modelos OpenSCAD en Fusion. & 4 & Guía #1: Diseño paramétrico de componentes. & 2 \\ \hline
+    
+    \textbf{Semana 3} \newline 30 de marzo & Cátedra: Programación Torno CNC (G00, G01, G71). \newline \textbf{Lab: SUSPENDIDO} (Suspensión 02 de abril desde 13:00 hrs). & 2 & \textbf{Asíncrono:} Video-tutorial de trayectorias en Fusion. & 2 \\ \hline
+    
+    \textbf{Semana 4} \newline 06 de abril & Cátedra: Programación Fresadora CNC. \newline \textbf{Lab: SUSPENDIDO} (Recepción estudiantes 09 de abril). & 2 & \textbf{Asíncrono:} Simulación de código G mediante software online. & 2 \\ \hline
+    
+    \textbf{Semana 5} \newline 13 de abril & Estrategias de manufactura CAM. Lab: Uso intensivo de Mastercam y Fusion Manufacturing. & 4 & Desarrollo de Informe de Laboratorio #1. & 2 \\ \hline
+    
+    \textbf{Semana 6} \newline 20 de abril & \textbf{PRUEBA N°1 (30\% Teoría)}. Lab: Preparación de archivos para mecanizado CNC. & 4 & Inicio de proyecto de manufactura integrada. & 2 \\ \hline
+    
+    \textbf{Semana 7} \newline 27 de abril & Teoría de Análisis por Elementos Finitos (FEA). Lab: Interfaz de Ansys y carga de geometrías. & 4 & Estudio de materiales y condiciones de borde. & 2 \\ \hline
+    
+    \textbf{Semana 8} \newline 04 de mayo & Simulación de cargas estáticas. Lab: Análisis de tensiones y convergencia de malla. & 4 & Guía #2: Simulación mecánica en componentes. & 2 \\ \hline
+    
+    \textbf{Semana 9} \newline 11 de mayo & Análisis Térmico y Transferencia de Calor. Lab: Simulación térmica en sistemas mecatrónicos. & 4 & Avance Proyecto Final Integrador. & 2 \\ \hline
+    
+    \textbf{Semana 10} \newline 18 de mayo & \textbf{SEMANA DE AUTOCUIDADO} (Sin actividades docentes programadas). & 0 & Trabajo autónomo y lectura de casos. & 2 \\ \hline
+    
+    \textbf{Semana 11} \newline 25 de mayo & Cátedra: Optimización Topológica y funcional. \newline \textbf{Lab: FERIADO} (21 de mayo - Glorias Navales). & 2 & Optimización de modelo paramétrico en OpenSCAD. & 2 \\ \hline
+    
+    \textbf{Semana 12} \newline 01 de junio & \textbf{PRUEBA N°2 (30\% Teoría)}. Lab: Validación de resultados CAE vs analíticos. & 4 & Finalización de Informes de Laboratorio (40\% Lab). & 2 \\ \hline
+    
+    \textbf{Semana 13} \newline 08 de junio & Integración Manufactura/CAE. Lab: Desarrollo de Proyecto Final - Fase Diseño. & 4 & Documentación técnica del proyecto. & 2 \\ \hline
+    
+    \textbf{Semana 14} \newline 15 de junio & Trabajo en Proyecto Final. Lab: Ejecución de simulaciones FEA del diseño. & 4 & Refinamiento de mallas y parámetros. & 2 \\ \hline
+    
+    \textbf{Semana 15} \newline 22 de junio & Revisión de avances. Lab: Generación de procesos CAM para el proyecto. & 4 & Preparación de presentación final. & 2 \\ \hline
+    
+    \textbf{Semana 16} \newline 29 de junio & \textbf{Cátedra: FERIADO} (29 de junio). Lab: Fabricación/Prototipado en Fablab (Impresión/Láser). & 2 & Ensamble y testeo de componentes. & 2 \\ \hline
+    
+    \textbf{Semana 17} \newline 06 de julio & \textbf{ENTREGA Y PRESENTACIÓN PROYECTO FINAL} (40\% Teoría). & 4 & Cierre de carpetas de laboratorio. & 2 \\ \hline
+    
+    \textbf{Semana 18} \newline 13 de julio & \textbf{PRUEBA OPCIONAL ACUMULATIVA (POA)} y Cierre de Actas. & 2 & Revisión de situaciones académicas finales. & 0 \\ \hline
+
+\end{longtable}
+
+\end{document}
